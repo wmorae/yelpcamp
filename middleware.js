@@ -1,18 +1,26 @@
+<<<<<<< HEAD
 const Campground = require('./models/campground');
 const Review = require('./models/review');
 const catchAsync = require('./utils/catchAsync')
 const { campgroundSchema, reviewSchema } = require('./schemas.js');
 const ExpressError = require('./utils/ExpressError')
 
+=======
+>>>>>>> 30c81d8fafe91a2d550add2acfdb35985d8b1741
 module.exports.isLoggedIn = (req, res, next) => {
 
     if (!req.isAuthenticated()) {
         req.session.returnTo = req.originalUrl
+<<<<<<< HEAD
         req.flash('error', 'You must be signed in first!')
+=======
+        req.flash('error', 'You must bne signed in first!')
+>>>>>>> 30c81d8fafe91a2d550add2acfdb35985d8b1741
         return res.redirect('/login')
     }
     next();
 }
+<<<<<<< HEAD
 
 
 module.exports.isCampgroundAuthor = async (req, res, next) => {
@@ -54,3 +62,5 @@ module.exports.validateCampground = (req, res, next) => {
         next();
     }
 }
+=======
+>>>>>>> 30c81d8fafe91a2d550add2acfdb35985d8b1741

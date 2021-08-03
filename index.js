@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 if(process.env.NODE_ENV !== "production")
     require('dotenv').config()
 
+=======
+>>>>>>> 30c81d8fafe91a2d550add2acfdb35985d8b1741
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -84,6 +87,12 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 30c81d8fafe91a2d550add2acfdb35985d8b1741
 app.all('*', (req, res, next) => {
     next(new ExpressError('Page Not Found', 404))
 })

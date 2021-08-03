@@ -11,7 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "connect-flash": "^0.1.1",
+<<<<<<< HEAD
     "dotenv": "^10.0.0",
+=======
+>>>>>>> 30c81d8fafe91a2d550add2acfdb35985d8b1741
     "ejs": "^3.1.6",
     "ejs-mate": "^3.0.0",
     "express": "^4.17.1",
