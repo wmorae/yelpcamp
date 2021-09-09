@@ -24,9 +24,9 @@ const registerForm = (req, res) => {
 }
 
 const login = (req, res) => {
-    req.flash('success', 'Welcome Back!')
     const redirectUrl = req.session.returnTo || '/campgrounds'
     delete req.session.returnTo
+    req.flash('success', 'Welcome Back!')
     res.redirect(redirectUrl)
 }
 
